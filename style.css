@@ -1,6 +1,8 @@
 :root {
     --white: #fcfef8;
     --light-yellow: #fdfae8;
+    --honey-yellow: #eeb459;
+    --light-brown: #af6c39;
 }
 
 * {
@@ -31,10 +33,45 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 120px;
+    padding: 1rem 4rem;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
-    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 45rem;
+}
+
+.logo img {
+    width: 4rem;
+    object-fit: contain;
+}
+
+.logo p {
+    text-align: center;
+    color: var(--light-brown);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    li {
+        border-left: 2px solid var(--light-brown);
+        padding: 0 1rem;
+    }
+
+    li:first-child {
+        border-left: none;
+    }
+
+    a {
+    color: var(--light-brown);
+    }
 }
 
 
@@ -87,4 +124,9 @@ footer {
     justify-content: space-between;
     padding: 5rem;
     background-color: var(--light-yellow);
+    color: var(--light-brown);
+}
+
+footer section:last-child {
+    text-align: right;
 }
